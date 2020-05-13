@@ -1,0 +1,67 @@
+[
+   {
+      "epmCommand":"addUsers",
+      "commandDescription":"Creates a batch of users in an identity domain using an ANSI or UTF-8 encoded Comma Separated Value (CSV) file that was uploaded to the environment. You use the uploadFile command to upload files to an environment.",
+      "supportedApps":[
+         "PBCS",
+         "SWP",
+         "SP",
+         "FCCS",
+         "TRCS",
+         "PCMCS",
+         "ARCS",
+         "EDMCS"
+      ],
+      "commandExample":"epmautomate addUsers user_file.CSV userPassword=Example@Pwd1 resetPassword=false"
+   },
+   {
+      "epmCommand":"addUsersToGroup",
+      "commandDescription":"Adds a batch of users to an existing group in Access Control using an ANSI or UTF-8 encoded CSV file that was uploaded to the environment.",
+      "supportedApps":[
+         "PBCS",
+         "SWP",
+         "SP",
+         "FCCS",
+         "TRCS",
+         "PCMCS",
+         "EDMCS"
+      ],
+      "commandExample":"epmautomate addUsersToGroup user_file.CSV example_group"
+   },
+   {
+      "epmCommand":"addUsersToTeam",
+      "commandDescription":"Adds EPM Cloud users listed in a CSV file to an existing team.",
+      "supportedApps":[
+         "FCCS",
+         "TRCS",
+         "ARCS"
+      ],
+      "commandExample":"epmautomate addUsersToTeam example_users.csv example_team"
+   },
+   {
+      "epmCommand":"addUsersToGroups",
+      "commandDescription":"Adds a user as a member of the Access Control groups identified in an ANSI or UTF-8 encoded CSV file.",
+      "supportedApps":[
+         "PBCS",
+         "SWP",
+         "SP",
+         "FCCS",
+         "TRCS",
+         "PCMCS",
+         "EDMCS"
+      ],
+      "commandExample":"epmautomate addUserToGroups groups.CSV jdoe@examle.com"
+   },
+   {
+      "epmCommand":"applicationAdminMode",
+      "commandDescription":"Places the application in administration mode so that access to the application is limited to Service Administrators only.",
+      "supportedApps":[
+         "PBCS",
+         "SWP",
+         "SP",
+         "FCCS",
+         "TRCS"
+      ],
+      "commandExample":"epmautomate applicationAdminMode true"
+   }
+]
